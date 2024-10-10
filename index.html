@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form id="userForm">
+    <div id="names">
+        <label for="firstName" oninput="checkNames()">First Name:</label>
+        <input type="text" id="firstName"  name="firstName" >
+        
+        <label for="lastName" oninput="checkNames()">Last Name:</label>
+        <input type="text" id="lastName"  name="lastName" >
+    </div>
+    <div id="comment">
+        <label for="comment"></label>
+        <textarea id="comment" name="comment"></textarea>
+    </div>
+        <label for="isSubscribed">Subscribe to Newsletter:</label>
+        <input type="checkbox" id="isSubscribed" name="isSubscribed">
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" >
+        
+        
+        <button type="submit" id="submitButton" >Submit</button>
+    </form> 
+    <div id="result"></div>
+    <script src="script.js"></script>
+</body>
+</html>
