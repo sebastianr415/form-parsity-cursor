@@ -8,15 +8,16 @@
 </head>
 <body>
     <form id="userForm">
-    <div id="names">
-        <label for="firstName" oninput="checkNames()">First Name:</label>
-        <input type="text" id="firstName"  name="firstName" >
-        
-        <label for="lastName" oninput="checkNames()">Last Name:</label>
-        <input type="text" id="lastName"  name="lastName" >
+    <div id="firstNameContainer">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" oninput="checkNames()" name="firstName">
+    </div>
+    <div id="lastName">
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" oninput="checkNames()" name="lastName" >
     </div>
     <div id="comment">
-        <label for="comment"></label>
+        <label for="comment">Comment:</label>
         <textarea id="comment" name="comment"></textarea>
     </div>
         <label for="isSubscribed">Subscribe to Newsletter:</label>
@@ -26,7 +27,7 @@
         <input type="email" id="email" name="email" >
         
         
-        <button type="submit" id="submitButton" >Submit</button>
+        <button type="submit" id="submitButton" disabled>Submit</button>
     </form> 
     <div id="result"></div>
     <script src="script.js"></script>

@@ -36,7 +36,7 @@ document.getElementById('userForm').addEventListener('submit', function(event) {
     }
     // POST request using fetch API
     // https://jsonplaceholder.typicode.com/users
-    fetch('', {
+    fetch('https://jsonplaceholder.typicode.com/users', {
       method: 'POST', 
       headers: {
         'Content-Type': 'application/json',
@@ -52,6 +52,7 @@ document.getElementById('userForm').addEventListener('submit', function(event) {
     .then(data => {
     //   console.log('Success:', data); // Handle success (e.g., show confirmation)
     document.getElementById('result').innerHTML = `Thanks for you submission ${firstName}`;
+    document.getElementById('userForm').reset();
     })
     .catch(error => {
       console.error('Error:', error); // Handle errors
